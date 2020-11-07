@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 
 app = Flask(__name__)
-model = pickle.load(open(r"C:\Users\Mihir\Desktop\Projects\Python Project - Bank Lending\Code File\loan_prediction.pkl", "rb")) 
+model = pickle.load(open("loan_prediction.pkl", "rb")) 
 
 @app.route('/')
 def home():
